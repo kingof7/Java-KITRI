@@ -16,6 +16,7 @@ public class InputThread extends Thread {
 		if(input != null) {
 			SubThread.inputCheck=true;			
 			System.out.println("입력하신 값은 " + input + "입니다." );
+			System.exit(0); // 스레드 모두 정상 종료 Terminated
 		}
 		
 	}

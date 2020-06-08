@@ -14,7 +14,7 @@ public class FileEx02 {
 			System.out.println("디렉토리가 생성되었습니다.");
 		}
 		
-		File file = new File(dir, "abc.txt"); // dir경로에 abc.txt를 만들어라
+		File file = new File(dir, "abc.txt"); // dir경로에 abc.txt를 찾는다.
 		System.out.println(file.isFile());
 		
 		try {

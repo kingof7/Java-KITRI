@@ -18,13 +18,25 @@ public class CharEx01 {
 
 	public static void main(String[] args) {
 		
+		File dir = null;
 		File file = null;
 		FileWriter fw = null; // 파일에 내용쓰기
 		BufferedWriter bw = null;
 		Scanner sc = null;
 		
 		try {
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\output\\charEx01.txt");
+			dir = new File("C:\\Users\\LJH\\output\\");
+			
+			if(dir.exists() == false) {
+				dir.mkdir(); 	// 디렉토리 생성
+				System.out.println("디렉토리가 생성되었습니다.");
+			}
+			
+			file = new File(dir, "char1.txt");
+			if((dir.exists() == true) && (file.isFile() == false)) {
+				file.createNewFile();
+				System.out.println("파일이 만들어졌습니다.");			
+			}
 			fw = new FileWriter(file); // 파일에 내용입력하는 객체생성 //줄바꿈 오케이~
 			bw = new BufferedWriter(fw, 1024);
 			

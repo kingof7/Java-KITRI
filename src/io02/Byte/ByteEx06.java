@@ -24,7 +24,7 @@ public class ByteEx06 {
 		BufferedOutputStream bos =null;
 		
 		try {
-			inFIle = new File("C:\\LJH\\eclipse\\fileupDown\\input\\Class Diagram.txt"); //이건 파일생성이아님
+			inFIle = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\input\\Class Diagram.txt"); //이건 파일생성이아님
 			/*
 			 * 파일생성법
 			 * File file = new File(dir, "abc.txt"); // dir경로에 abc.txt를 만들어라	 
@@ -33,7 +33,7 @@ public class ByteEx06 {
 			fis = new FileInputStream(inFIle); //읽기
 			bis = new BufferedInputStream(fis, 1024); //일반 파일업로드일때는 1024(max) 바이트씩 모아서 처리  // 네트워크통신에서는 512바이트가 max
 			
-			outFile = new File("C:\\LJH\\eclipse\\fileupDown\\output\\Class Diagram.txt");
+			outFile = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\output\\Class Diagram.txt");
 			fos = new FileOutputStream(outFile);
 			bos = new BufferedOutputStream(fos, 1024);
 			

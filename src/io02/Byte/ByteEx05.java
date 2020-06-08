@@ -18,7 +18,7 @@ public class ByteEx05 {
 		try {
 			
 			//파일 출력
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\output\\Ex05.txt"); //파일 생서
+			file = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\output\\Ex05.txt"); //파일 생서
 			fos = new FileOutputStream(file);
 			
 			
@@ -26,7 +26,7 @@ public class ByteEx05 {
 			String str = "안녕하세요"; 		//1.문자
 			byte[] data = str.getBytes(); //2. bytes로 바꿔서 출력
 			fos.write(data);			
-			fos.flush();
+			fos.flush(); //Ex05.txt에 안녕하세요를 내보냄
 			
 			//파일 입력
 			fis = new FileInputStream(file);

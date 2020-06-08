@@ -17,7 +17,7 @@ public class CharEx02 {
 		BufferedReader br = null;
 		
 		try {
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\output\\charEx01.txt");
+			file = new File("C:\\Users\\LJH\\output\\char1.txt");
 			fr = new FileReader(file);
 			br = new BufferedReader(fr, 1024);
 			

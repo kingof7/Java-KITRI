@@ -27,7 +27,7 @@ public class Quiz22 {
 		
 		try {			
 			//출력						
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\output\\quiz22.txt");
+			file = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\output\\quiz22.txt");
 			fw = new FileWriter(file);
 			bw = new BufferedWriter(fw, 1024);
 			pw = new PrintWriter(bw);
@@ -37,8 +37,8 @@ public class Quiz22 {
 				sc = new Scanner(System.in);
 				String msg = sc.nextLine();		
 								
-				bw.write(msg + "\r\n"); //줄바꿀때마다 엔터를 넣어라?
-								
+				//bw.write(msg + "\r\n"); //줄바꿀때마다 엔터를 넣어라?
+				pw.println(msg);				
 				pw.flush();
 				i++;
 			}			

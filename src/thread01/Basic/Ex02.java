@@ -10,7 +10,7 @@ public class Ex02 {
 		SubThread st = new SubThread();
 		st.start();
 		
-		InputThread it = new InputThread()	;
+		InputThread it = new InputThread();
 		it.start();		
 		
 	}

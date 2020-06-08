@@ -26,7 +26,7 @@ public class CharEx03 {
 			System.out.println("문자열을 입력하세요.");
 			sc = new Scanner(System.in);
 			
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\output\\charEx01.txt");
+			file = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\outputcharEx01.txt");
 			fw = new FileWriter(file);
 			bw = new BufferedWriter(fw, 1024);
 			pw = new PrintWriter(bw);
@@ -36,9 +36,9 @@ public class CharEx03 {
 				
 				if(msg.equalsIgnoreCase("q"))	 break;
 				
-				bw.write(msg + "\r\n"); //줄바꿀때마다 엔터를 넣어라?
+				//bw.write(msg + "\r\n"); //줄바꿀때마다 엔터를 넣어라?
 				
-				//pw.println(msg);
+				pw.println(msg);
 				pw.flush();
 			}
 			System.out.println("\n출력완료\n");

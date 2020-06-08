@@ -13,7 +13,7 @@ public class ByteEx02 {
 		FileInputStream fis = null;
 		
 		try {
-			file = new File("C:\\LJH\\eclipse\\fileupDown\\quiz22.txt");
+			file = new File("C:\\Users\\LJH\\eclipse\\fileupDown\\quiz22.txt");
 			fis = new FileInputStream(file);
 			
 			byte[] data = new byte[65536]; //byte 배열을 일단 최대치로 선언 --> file을 byte에 담음 (FileInput,OutputStream은 byte형태로 주고받기때문)
